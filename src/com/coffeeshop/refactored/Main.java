@@ -4,10 +4,6 @@ import com.coffeeshop.refactored.persistence.FileTransactionRepository;
 import com.coffeeshop.refactored.pricing.VatTaxCalculator;
 import com.coffeeshop.refactored.receipt.ReceiptPrinter;
  
-/**
- * Composition root: the one place in the app that knows about
- * concrete implementations and wires them together.
- */
 public class Main {
     public static void main(String[] args) {
         OrderProcessor processor = new OrderProcessor(
