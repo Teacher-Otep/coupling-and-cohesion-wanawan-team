@@ -1,11 +1,6 @@
 package com.coffeeshop.refactored.receipt;
  
 import com.coffeeshop.refactored.model.Order;
- 
-/**
- * Responsibility: presentation only — how a receipt looks on screen.
- * Knows nothing about tax math or where/whether data gets saved.
- */
 public class ReceiptPrinter {
  
     public void print(Order order, double tax, double finalPrice) {
