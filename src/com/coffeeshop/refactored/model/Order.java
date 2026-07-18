@@ -1,9 +1,4 @@
 package com.coffeeshop.refactored.model;
- 
-/**
- * Immutable data holder for an order.
- * Responsibility: represent order data only. No logic, no formatting, no I/O.
- */
 public class Order {
     private final String customerName;
     private final String coffeeType;
