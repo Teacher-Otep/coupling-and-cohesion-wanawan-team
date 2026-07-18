@@ -1,9 +1,4 @@
 package com.coffeeshop.refactored.pricing;
- 
-/**
- * Responsibility: apply local VAT to a base price. Nothing else.
- * If the tax rate or rule ever changes, only this class is touched.
- */
 public class VatTaxCalculator implements TaxCalculator {
  
     private final double taxRate;
