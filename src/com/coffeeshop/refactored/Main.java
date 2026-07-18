@@ -1,5 +1,4 @@
 package com.coffeeshop.refactored;
- 
 import com.coffeeshop.refactored.persistence.FileTransactionRepository;
 import com.coffeeshop.refactored.pricing.VatTaxCalculator;
 import com.coffeeshop.refactored.receipt.ReceiptPrinter;
