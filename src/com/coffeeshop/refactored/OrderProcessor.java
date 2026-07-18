@@ -4,17 +4,7 @@ import com.coffeeshop.refactored.model.Order;
 import com.coffeeshop.refactored.persistence.TransactionRepository;
 import com.coffeeshop.refactored.pricing.TaxCalculator;
 import com.coffeeshop.refactored.receipt.ReceiptPrinter;
- 
-/**
- * Responsibility: coordinate the order workflow — nothing more.
- * It no longer knows HOW tax is computed, HOW a receipt is formatted,
- * or HOW/WHERE data is stored. It only knows the sequence of steps.
- *
- * Collaborators are injected via the constructor (dependency injection),
- * so OrderProcessor is coupled only to interfaces, not concrete
- * implementations. Any collaborator can be swapped or mocked in tests
- * without touching this class.
- */
+
 public class OrderProcessor {
  
     private final TaxCalculator taxCalculator;
